@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000/transaction/'; // Change to your actual API URL
+const API_URL = 'https://backendgrocery-5rpu.onrender.com/transaction/'; // Change to your actual API URL
 
 export const getTransaction = async () => {
   const response = await axios.get(API_URL);
