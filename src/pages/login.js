@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://grocery-delta-six.vercel.app/api/token/', {
+      const response = await axios.post('https://backendgrocery-5rpu.onrender.com/api/token/', {
         username,
         password,
       });
