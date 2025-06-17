@@ -36,7 +36,7 @@ const HeaderMain = () => {
             </li>
             <li className="flex items-center gap-2 hover:text-blue-400">
               <LogIn size={16} />
-              <Link to="/">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@ const HeaderMain = () => {
             </li>
             <li className="flex items-center gap-2 hover:text-blue-400">
               <LogIn size={16} />
-              <Link to="/">Dashboard</Link>
+              <Link to="/dashboard">Dashboard</Link>
             </li>
           </ul>
         </nav>
