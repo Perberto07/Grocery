@@ -59,6 +59,7 @@ const Sidebar = () => {
             </li>
             <li className="flex items-center gap-2 hover:text-blue-400 cursor-pointer">
               <ShoppingCart size={18} />
+              <Link to="/dashboard/transaction-panel">Transaction</Link>
               Transaction
             </li>  
             <li
