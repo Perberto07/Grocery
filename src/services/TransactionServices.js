@@ -11,7 +11,7 @@ const getAuthHeaders = () => {
   };
 };
 
-export const getTransaction = async (page = 1, pageSize = 10) => {
+export const getTransaction = async (page = 1, pageSize = 20) => {
   const token = localStorage.getItem('access_token');
   const response = await axios.get(API_URL, {
     headers: {
@@ -34,7 +34,7 @@ export const getTransactionById = async (id) => {
 
 
 export const createTransaction = async (productData) => {
-  const response = await axios.post(API_URL, productData);
+  const response = await axios.post(API_URL, productData, getAuthHeaders());
   return response.data;
 };
 
