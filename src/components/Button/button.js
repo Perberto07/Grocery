@@ -8,8 +8,9 @@ const Button = ({ children, onClick, variant = 'primary', className = '', ...pro
     secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300',
     danger: 'bg-red-500 text-white hover:bg-red-600',
     submit: 'bg-blue-500 text-white hover:bg-blue-600',
-    black: 'bg-black text-white hover:bg-gray-800',
     green: 'bg-green-700 text-white hover:bg-green-800',
+    black: 'bg-black text-white hover:bg-gray-800',
+    warning: 'bg-yellow-600'
   };
 
   return (

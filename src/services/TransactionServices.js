@@ -44,6 +44,6 @@ export const updateTransaction= async (id, productData) => {
 };
 
 export const deleteTransaction = async (id) => {
-  const response = await axios.delete(`${API_URL}${id}/`); // <- Add trailing slash
+  const response = await axios.delete(`${API_URL}${id}/`, getAuthHeaders()); // <- Add trailing slash
   return response.data;
 };
