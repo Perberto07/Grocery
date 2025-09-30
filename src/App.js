@@ -28,27 +28,27 @@ function App() {
         } />
         
         <Route path="/customer" element={
-          
+          <ProtectedRoute>
             <Customer />
-         
+         </ProtectedRoute>
         } />
         
         <Route path="/product" element={
-          
+          <ProtectedRoute>
             <Product />
-         
+         </ProtectedRoute>
         } />
         
         <Route path="/transaction" element={
-          
+          <ProtectedRoute>
             <Transactions />
-         
+         </ProtectedRoute>
         } />
         
         <Route path="/transaction/:id" element={
-          
+          <ProtectedRoute>
             <TransactionDetailPage />
-         
+         </ProtectedRoute>
         } />
         
         {/* Dashboard Routes */}
@@ -59,25 +59,25 @@ function App() {
         } />
         
         <Route path="/dashboard/transaction-panel" element={
-          
+          <ProtectedRoute>
             <TransactionPanel />
-         
+         </ProtectedRoute>
         } />
 
         <Route path="/dashboard/Report" element={
-          
+          <ProtectedRoute>
             <Reports />
-         
+         </ProtectedRoute>
         } />
         <Route path="/dashboard/category" element={
-          
+          <ProtectedRoute>
             <Category />
-         
+         </ProtectedRoute>
         } />
         <Route path="/dashboard/user" element={
-          
+          <ProtectedRoute>
             <Users/>
-         
+         </ProtectedRoute>
         } />
       </Routes>
       
